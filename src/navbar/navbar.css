@@ -1,11 +1,14 @@
 .navbar
 {
+    /* display:flex;
+    flex-direction: row-reverse; */
     width:100vw;
     position:fixed;
 }
 a
 {
     display: inline-block;
-    width:100px;
+    padding:10px;
     text-decoration:none;
+    color:white;
 }
