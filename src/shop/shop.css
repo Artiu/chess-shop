@@ -1,0 +1,13 @@
+.shop
+{
+    background: url("board.jpg");
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+h1
+{
+    width:100%;
+    text-align:center;
+}
