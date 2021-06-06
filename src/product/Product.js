@@ -1,6 +1,5 @@
 import React from 'react';
 import './Product.css';
-// import zegar from './zegar.png'
 export default class Product extends React.Component
 {
     constructor(props)
@@ -32,15 +31,18 @@ export default class Product extends React.Component
         }));
     }
     render(){
+        const {name,photo,description,price} = this.props;
         return(
             <div className='product'>
-                <h2>{this.props.name}</h2>
-                {/* <img src={zegar} alt="zdjecie_produktu"></img> */}
-                <span>{this.props.description}</span>
-                <span>{this.props.price}</span>
-                <button onClick={this.minusAmount}>-</button>
-                <span>{this.state.amount}</span>
-                <button onClick={this.addAmount}>+</button>
+                <h2>{name}</h2>
+                <img src={photo} alt="zdjecie_produktu"></img>
+                <p id="description">{description}</p>
+                <p>Cena za sztukę: {price} zł</p>
+                <div className='amount-container'>
+                    <button onClick={this.minusAmount}>-</button>
+                    <span>{this.state.amount}</span>
+                    <button onClick={this.addAmount}>+</button>
+                </div>
                 <button onClick={this.addToCart}>Dodaj do koszyka</button>
             </div>
         );

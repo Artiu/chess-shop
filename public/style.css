@@ -6,4 +6,5 @@
     font-family: 'Sigmar One', cursive;
     overflow-x:hidden;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import './shop.css';
 import Product from '../product/Product';
+import zegar from '../product/images/zegar.png';
+import szachownica from '../product/images/szachownica.png';
+import bierki from '../product/images/bierki.png';
 export default class Shop extends React.Component
 {
     render (){
@@ -9,35 +12,35 @@ export default class Shop extends React.Component
             name:'Szachownica',
             price:'100',
             description:'Najwyższej jakości szachownica stworzona z myślą o profesjonalnej grze turniejowej',
-            photo:'zegar'
+            photo:szachownica
         },
         {
             id:'2',
             name:'Zegar szachowy',
             price:'300',
             description:'Najwyższej jakości zegar z myślą o profesjonalnym zastosowaniu na turniejach',
-            photo:'zegar'
+            photo:zegar
         },
         {
             id:'3',
-            name:'Zegar szachowy',
+            name:'Bierki szachowe',
             price:'300',
-            description:'Najwyższej jakości zegar z myślą o profesjonalnym zastosowaniu na turniejach',
-            photo:'zegar'
+            description:'Najwyższej jakości bierki z myślą o profesjonalnym zastosowaniu na turniejach',
+            photo:bierki
         },
         {
             id:'4',
             name:'Zegar szachowy',
             price:'300',
-            description:'Najwyższej jakości zegar z myślą o profesjonalnym zastosowaniu na turniejach',
-            photo:'zegar'
+            description:'Najwyższej jakości zegar z myślą o profesjonalnym zastosowaniu w domu',
+            photo:zegar
         },
         {
             id:'5',
             name:'Zegar szachowy',
             price:'300',
             description:'Najwyższej jakości zegar z myślą o profesjonalnym zastosowaniu na turniejach',
-            photo:'zegar'
+            photo:zegar
         }
         ];
         return(
