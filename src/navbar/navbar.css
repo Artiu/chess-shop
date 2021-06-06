@@ -1,9 +1,9 @@
 .navbar
 {
-    /* display:flex;
-    flex-direction: row-reverse; */
     width:100vw;
     position:fixed;
+    background-color: rgba(81,41,31,0.4);
+    z-index:2;
 }
 a
 {
@@ -11,4 +11,14 @@ a
     padding:10px;
     text-decoration:none;
     color:white;
+}
+a:hover
+{
+    color:#e3b473;
+}
+.links-container
+{
+    width:fit-content;
+    margin-left:auto;
+    margin-right:15px;
 }

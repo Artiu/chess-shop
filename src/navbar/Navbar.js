@@ -2,9 +2,11 @@ import './navbar.css';
 function Navbar() {
   return (
     <div className="navbar">
-      <a href="">Strona główna</a>
-      <a href="">O nas</a>
-      <a href="">Sklep</a>
+      <div className="links-container">
+        <a href="#home">Strona główna</a>
+        <a href="#aboutUs">O nas</a>
+        <a href="#shop">Sklep</a>
+      </div>
     </div>
   );
 }
