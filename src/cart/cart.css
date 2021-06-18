@@ -1,0 +1,55 @@
+#shopCart
+{
+    position:fixed;
+    top:40%;
+    left:50%;
+    width:50%;
+    min-height:50vh;
+    transform:translate(-50%,-50%);
+    background-color: rgba(81,41,31,0.9);
+    backdrop-filter: blur(3px);
+    border-radius:10px;
+    z-index:3;
+}
+#shopCart .turnOff
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin:10px 10px;
+    border-radius:10px;
+    padding:0;
+    width:30px;
+    height:30px;
+}
+#shopCart h2
+{
+    text-align: center;
+    margin-top:10px;
+}
+#shopCart ol li
+{
+    width:100%;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    align-items:center;
+    overflow-y: hidden;
+}
+#shopCart ol li div
+{
+    display:flex;
+    align-items:center;
+}
+#shopCart ol li #right
+{
+    justify-items: space-between;
+}
+#shopCart ol li img
+{
+    width:100px;
+    height:100px;
+}
+p.name
+{
+    margin-left:20px;
+}

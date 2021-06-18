@@ -47,7 +47,7 @@ export default class Shop extends React.Component
                 <div className='shop' id="shop">
                     <h1>Nasz sklep</h1>
                     {products.map(product => 
-                        <Product key={product.id} name={product.name} price={product.price} description={product.description} photo={product.photo}/>
+                        <Product key={product.id} name={product.name} price={product.price} description={product.description} photo={product.photo} addToCart={this.props.addToCart}/>
                     )}
                 </div>
         );

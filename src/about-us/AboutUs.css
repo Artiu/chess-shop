@@ -37,10 +37,10 @@
 }
 img
 {
-    width:300px !important;
-    height:300px !important;
+    width:300px;
+    height:300px;
 }
-span
+#aboutUs span
 {
     line-height:1;
 }
