@@ -31,7 +31,7 @@ export default class Product extends React.Component
         const description = this.props.description;
         const price = this.props.price;
         const amount = this.state.amount;
-        const id = this.props.id
+        const id = this.props.id;
         const product = {
             id : id,
             name: name,

@@ -18,9 +18,9 @@ export default class Cart extends React.Component {
                                     <p className="name">{product.name}</p> 
                                 </div>
                                 <div className="right">
-                                    <button>+</button>
+                                    <button  onClick={()=>this.props.changeAmount(product.id,"minus")}>-</button>
                                     <p className="amount">{product.amount}</p>
-                                    <button>-</button>
+                                    <button onClick={()=>this.props.changeAmount(product.id,"plus")}>+</button>
                                     <p className="price">{product.price*product.amount}zł</p>
                                 </div>
                             </li>

@@ -15,16 +15,47 @@ class App extends React.Component
   }
   addToCart = (product) =>
   {
-    this.setState(prevState => ({
-      cart: [...prevState.cart,product]
-    }));
+    const cart = this.state.cart;
+    let addNew = true;
+    for(let i in cart)
+    {
+      if(product.id === cart[i].id){
+        cart[i].amount += product.amount;
+        addNew = false;
+        break;
+      }
+    }
+    if(addNew)
+    {
+      this.setState(prevState => ({
+        cart: [...prevState.cart,product]
+      }));
+    }
+    else
+    {
+      this.setState(() => ({
+        cart: cart
+      }));
+    }
   }
-  plusAmount = (id) =>
+  changeAmount = (id,operation) =>
   {
     let cartTab = this.state.cart;
-    cartTab = cartTab.forEach((el)=>{
-      if(el.id===id) el.amount += 1;
-    });
+    for(let i in cartTab)
+    {
+      if(id === cartTab[i].id){
+        if(operation==="plus")
+        {
+          cartTab[i].amount += 1;
+        }
+        else
+        {
+          if(cartTab[i].amount > 1) cartTab[i].amount -= 1;
+          else cartTab.splice(i,1);
+        }
+        break;
+      }
+    }
     this.setState(() => ({
       cart: cartTab
     }));
@@ -41,7 +72,7 @@ class App extends React.Component
     return(
       <>
         <Navbar changeCartVisibility={this.changeCartVisibility} amount = {this.state.cart.length}/>
-        <Cart visibility={this.state.cartVisible} cart={this.state.cart} changeCartVisibility={this.changeCartVisibility} />
+        <Cart visibility={this.state.cartVisible} cart={this.state.cart} changeCartVisibility={this.changeCartVisibility} changeAmount={this.changeAmount}/>
         <HomePage />
         <AboutUs />
         <Shop addToCart = {this.addToCart}/>
