@@ -17,7 +17,7 @@ export default class MainPage extends React.Component
         return(
             <div className="homePage" id="home">
                 <h1>Produkt dnia</h1>
-                <Product key={product.id} name={product.name} price={product.price} description={product.description} photo={product.photo}/>
+                <Product key={product.id} id={product.id} name={product.name} price={product.price} description={product.description} photo={product.photo} addToCart={this.props.addToCart}/>
             </div>
         );
     }

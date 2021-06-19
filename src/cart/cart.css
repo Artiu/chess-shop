@@ -30,19 +30,19 @@
 #shopCart ol li
 {
     width:100%;
-    display:grid;
-    grid-template-columns: 70% 30%;
-    align-items:center;
+    margin:20px 0;
     overflow-y: hidden;
 }
 #shopCart ol li div
 {
+    float:left;
     display:flex;
     align-items:center;
 }
-#shopCart ol li #right
+#shopCart ol li .right
 {
-    justify-items: space-between;
+    float:right;
+    height: 100px;
 }
 #shopCart ol li img
 {
@@ -52,4 +52,66 @@
 p.name
 {
     margin-left:20px;
+}
+#shopCart ol li:hover
+{
+    background-color:#874f2c;
+}
+#shopCart .amountContainer button
+{
+    margin:0;
+    width:35px;
+    height:35px;
+}
+#shopCart .amountContainer .amount
+{
+    width:30px;
+    text-align:center;
+}
+#shopCart .price
+{
+    min-width:100px;
+    text-align: center;
+}
+#buy
+{
+    display: block;
+    margin: 20px auto;
+}
+#shopCart p {
+    text-align: center;
+}
+@media (max-width:1000px)
+{
+    #shopCart
+    {
+        width:90%;
+    }
+}
+@media (max-width:500px)
+{
+    #shopCart ol li img{
+        width:50px;
+        height:50px;
+    }
+    #shopCart ol li .right{
+        height:50px;
+    }
+    #shopCart .price
+    {
+        min-width:60px;
+    }
+    p.name{
+        margin-left:5px;
+    }
+    #shopCart .amountContainer button
+    {
+        width:25px;
+        height: 25px;
+        padding:0;
+    }
+    #shopCart .amountContainer .amount
+    {
+        width:20px;
+    }
 }

@@ -67,13 +67,21 @@ class App extends React.Component
       cartVisible: !(currentValue)
     }));
   }
+  buy = () =>
+  {
+    this.setState(()=>({
+      cart:[],
+      cartVisible:false
+    }))
+   alert("Twoje zamówienie zostało przyjęte do realizacji");
+  }
   render()
   {
     return(
       <>
         <Navbar changeCartVisibility={this.changeCartVisibility} amount = {this.state.cart.length}/>
-        <Cart visibility={this.state.cartVisible} cart={this.state.cart} changeCartVisibility={this.changeCartVisibility} changeAmount={this.changeAmount}/>
-        <HomePage />
+        <Cart visibility={this.state.cartVisible} cart={this.state.cart} changeCartVisibility={this.changeCartVisibility} changeAmount={this.changeAmount} buy={this.buy}/>
+        <HomePage addToCart = {this.addToCart}/>
         <AboutUs />
         <Shop addToCart = {this.addToCart}/>
         <Footer />

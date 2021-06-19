@@ -39,3 +39,10 @@ button:hover
 {
     margin-top:10px;
 }
+@media (max-width:600px)
+{
+    .product
+    {
+        width:95%;
+    }
+}

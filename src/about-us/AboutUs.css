@@ -1,7 +1,7 @@
 .about-us
 {
     font-size: 1.3em;
-    background-color:#e3b473;
+    background-color:#fce49e;
     display:grid;
     width:100%;
     grid-template-areas:
@@ -55,6 +55,7 @@ img
         margin:auto;
         width:100%;
         text-align:center;
+        border:0;
     }
     .box_1 img,.box_2 img
     {
