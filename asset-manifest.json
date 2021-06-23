@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/chess-shop/static/css/main.d05f1d7e.chunk.css",
+    "main.js": "/chess-shop/static/js/main.0eaa510b.chunk.js",
+    "main.js.map": "/chess-shop/static/js/main.0eaa510b.chunk.js.map",
+    "runtime-main.js": "/chess-shop/static/js/runtime-main.a9bdc12f.js",
+    "runtime-main.js.map": "/chess-shop/static/js/runtime-main.a9bdc12f.js.map",
+    "static/js/2.76dedae3.chunk.js": "/chess-shop/static/js/2.76dedae3.chunk.js",
+    "static/js/2.76dedae3.chunk.js.map": "/chess-shop/static/js/2.76dedae3.chunk.js.map",
+    "index.html": "/chess-shop/index.html",
+    "static/css/main.d05f1d7e.chunk.css.map": "/chess-shop/static/css/main.d05f1d7e.chunk.css.map",
+    "static/js/2.76dedae3.chunk.js.LICENSE.txt": "/chess-shop/static/js/2.76dedae3.chunk.js.LICENSE.txt",
+    "static/media/bierki.77c51f6a.png": "/chess-shop/static/media/bierki.77c51f6a.png",
+    "static/media/shop.css": "/chess-shop/static/media/board.c6f58240.jpg",
+    "static/media/check.9cf57122.png": "/chess-shop/static/media/check.9cf57122.png",
+    "static/media/king.65cd9976.png": "/chess-shop/static/media/king.65cd9976.png",
+    "static/media/szachownica.f88bc21c.png": "/chess-shop/static/media/szachownica.f88bc21c.png",
+    "static/media/HomePage.css": "/chess-shop/static/media/szachy.5f14515a.jpg",
+    "static/media/zegar.0327303e.png": "/chess-shop/static/media/zegar.0327303e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9bdc12f.js",
+    "static/js/2.76dedae3.chunk.js",
+    "static/css/main.d05f1d7e.chunk.css",
+    "static/js/main.0eaa510b.chunk.js"
+  ]
+}

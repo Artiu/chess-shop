@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Sigmar One', cursive;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #51291f;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip:border-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d6d6d6;
+  }
